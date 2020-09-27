@@ -55,4 +55,4 @@ One way to run this would be to select the code in this session block-by-block, 
 
  * We have noticed that `corr()` function in Matlab might be a little more picky about argument dimensions that the one in Octave -- so please be careful.   
 
-This example was verified in both Matlab R2015a and Octave 4.2.2 ( using console version, `octave-cli`, to avoid quite annoying bug [49385](https://savannah.gnu.org/bugs/?49385) ).  
+This example was verified in both Matlab R2015a and Octave 4.2.2 (using console version, `octave-cli`, to avoid quite annoying bug [49385](https://savannah.gnu.org/bugs/?49385)).  
