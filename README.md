@@ -39,7 +39,7 @@ A few notes:
 
  1. It is assumed that the `markers` are specified as indexes in the `data` array.  
     Therefore, if e.g. data samples were recorded with a sampling rate *1000 Hz*,  
-    and your first marker happens to be at *0.534* from the start of the recording --  
+    and your first marker happens to be at *0.534 s* from the start of the recording --  
     -- then its Matlab index in the array would be *534*.  
     Or, in Matlab/Octave notation : `marker_indexes = marker_seconds * sampling_rate ;`
   
