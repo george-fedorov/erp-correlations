@@ -2,7 +2,7 @@
 
 These are supplementary materials for the following publication: Fedorov G. O., Levichkina E. V., Lavrova V. D., Pigarev I. N., _"Assessment of a single trial impact in the averaged event related potential"_.
 
-Code referred to in the paper is **correlations.m**. In addition, **correlations-session-example.m** shows an example of using it.
+Code referred to in the paper is [correlations.m](correlations.m). In addition, [correlations-session-example.m](correlations-session-example.m) shows an example of using it.
 
 <!--
  * `correlations.m` -- code computing the correlations 
