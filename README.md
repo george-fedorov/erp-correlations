@@ -35,7 +35,7 @@ Code referred to in the paper is [correlations.m](correlations.m). In addition, 
     Finally, undefined correlations (NaNs) are replaced with zeroes.
 
 
-Two notes:
+A few notes:
 
  1. It is assumed that the `markers` are specified as indexes in the `data` array.  
     Therefore, if e.g. data samples were recorded with a sampling rate *1000 Hz*,  
@@ -47,6 +47,8 @@ Two notes:
      or electroencephalography - EEG data); if you intent to use the script  
      for any point process data (e.g. neuronal spikes), average point process   
      in a sliding window (of any desired length) with step equal to 1.  
+     
+  3. This function wraps and returns [Pearson's Linear Correlation Coefficients](https://mathworks.com/help/stats/corr.html#mw_1b19e0d5-7906-4577-a0a5-b20311da7faf) aka (centered) [cosine similarity](https://en.wikipedia.org/wiki/Cosine_similarity); to use "sine similarity" introduced in the paper, one has to convert the output `sc = correlations(data, markers, maxshift, pattern)` as follows: `sc(find(sc < 0)) = 0.0 ; sine = 1 - sc .^ 2` .
 
 
 ## correlations-session-example
