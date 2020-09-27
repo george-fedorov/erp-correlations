@@ -48,7 +48,7 @@ A few notes:
      for any point process data (e.g. neuronal spikes), average point process   
      in a sliding window (of any desired length) with step equal to 1.  
      
-  3. This function wraps and returns [Pearson's Linear Correlation Coefficients](https://mathworks.com/help/stats/corr.html#mw_1b19e0d5-7906-4577-a0a5-b20311da7faf) aka (centered) [cosine similarity](https://en.wikipedia.org/wiki/Cosine_similarity); to use "sine similarity" introduced in the paper, one has to convert the output `sc = correlations(data, markers, maxshift, pattern)` as follows: `sc(find(sc < 0)) = 0.0 ; sine = 1 - sc .^ 2` .
+  3. This function wraps and returns [Pearson's Linear Correlation Coefficients](https://mathworks.com/help/stats/corr.html#mw_1b19e0d5-7906-4577-a0a5-b20311da7faf) aka (centered) [cosine similarity](https://en.wikipedia.org/wiki/Cosine_similarity); to use "sine similarity" introduced in the paper, one has to convert the function output `sc = correlations(data, markers, maxshift, pattern)` as follows: `sc(find(sc < 0)) = 0.0 ; sine = 1 - sc .^ 2` .
 
 
 ## correlations-session-example
